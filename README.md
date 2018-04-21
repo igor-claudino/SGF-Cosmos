@@ -10,4 +10,4 @@ Sistema de Gerenciamento de Funcionários - Supermercado Cosmos - Crateús CE
 Employee Management System - Cosmos Supermarket - Crateús CE
 
    The system was developed as the final product of an internship of the Technical Course in Informatics at the State School of Professional Education Manoel Mano.
-   The intent of the system is to have company HR control including holiday calculation, suspension and warnings control.
+   The intent of the system is to have company Human Resources control including holiday calculation, suspension and warnings control.
