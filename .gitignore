@@ -4,6 +4,7 @@
 # Log file
 *.log
 
+<<<<<<< HEAD
 #SQL Files
 *.sql
 
@@ -19,7 +20,6 @@
 /build/
 /dist/
 /nbproject/
-
 
 # Package Files #
 *.jar
