@@ -1,0 +1,4 @@
+localhost
+root
+
+sgf_cosmos

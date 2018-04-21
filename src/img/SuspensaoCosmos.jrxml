@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SuspensaoCosmos" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a7341786-16ee-450f-95eb-6e85338b1743">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="474"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="50893906-04bd-485c-919c-49a6214f7693" style="Title" x="0" y="13" width="263" height="33"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[SGFCosmos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2990306d-1a5b-459c-b3d9-0a5b46eea04d" style="SubTitle" x="0" y="48" width="368" height="22"/>
+				<textElement/>
+				<text><![CDATA[Sistema de Gerenciamento de Funcionários]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="687">
+			<staticText>
+				<reportElement uuid="a2f65348-f288-4649-97f6-9c8af01486cd" x="0" y="25" width="553" height="97"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Crateús,
+
+
+Ao funcionário:
+CPF:
+]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="46ab004b-79b7-449f-9c48-8d2b33245380" style="Column header" x="257" y="29" width="197" height="20"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="46c9d2d7-cc1b-4447-91d6-38b635c9e3bd" x="0" y="392" width="553" height="49"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Salientamos, que a reincidência poderá ocasionar a rescisão do seu contrato de trabalho por Justa Causa.
+
+
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7954ce54-3846-4748-ad3e-c59809cd7ff7" x="142" y="503" width="291" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="264d9e41-7502-4392-b589-e4bc14c010f7" x="149" y="515" width="282" height="38"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Supermercado Cosmos]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="e546625d-79b2-45be-bfcf-41be8f34c692" style="Column header" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="c64b3971-36c4-47b2-9114-35e867a02cb2" style="Column header" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="46ab004b-79b7-449f-9c48-8d2b33245380" style="Column header" x="0" y="0" width="197" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
